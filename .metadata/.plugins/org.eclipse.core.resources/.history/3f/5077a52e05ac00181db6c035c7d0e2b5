@@ -1,0 +1,21 @@
+package com.user.action;
+
+import com.user.gateway.UserManagementRestServiceGatewayImpl;
+
+public class UserManagementAction {
+   private String name;
+
+   public String execute() throws Exception {
+	  UserManagementRestServiceGatewayImpl userManagementRestServiceGatewayImpl= new UserManagementRestServiceGatewayImpl();
+	  userManagementRestServiceGatewayImpl.callUsermanagementrestService();
+      return "success";
+   }
+   
+   public String getName() {
+      return name;
+   }
+
+   public void setName(String name) {
+      this.name = name;
+   }
+}

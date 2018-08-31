@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.label {
+	background-color: blue;
+	color: #000000;
+	text-shadow: none;	
+}
+

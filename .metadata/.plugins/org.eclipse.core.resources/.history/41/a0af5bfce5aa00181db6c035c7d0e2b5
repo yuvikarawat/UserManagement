@@ -1,0 +1,10 @@
+package com.user.gateway;
+
+public class UserManagementRestServiceGatewayImpl {
+
+	
+	public String callUsermanagementrestService() {
+		
+		return "";
+	}
+}

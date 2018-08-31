@@ -1,0 +1,12 @@
+package com.user.dao;
+
+public class User {
+private String firstName;
+private String lastName;
+private String fullname;
+private String userName;
+private int userId;
+private String role;
+private String status;
+
+}

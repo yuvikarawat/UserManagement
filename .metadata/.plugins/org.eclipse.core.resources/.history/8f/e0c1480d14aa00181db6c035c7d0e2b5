@@ -1,0 +1,25 @@
+package com.tutorialspoint;  
+
+import java.util.ArrayList;
+import java.util.List;  
+
+public class UserDao { 
+   public List<User> getAllUsers(){ 
+      
+      List<User> userList = null; 
+      try { 
+            //User user = new User(1, "Mahesh3", "Teacher3"); 
+            userList = new ArrayList<User>(); 
+            userList.add(new User("Jerry Allen Sienfeld", "Jerry","Allen","Sienfeld","JAS123","Active"));
+            userList.add(new User("Christopher Julius Rock", "Christopher","Julius","Rock","CJR123","Active"));
+            userList.add(new User("Kevin Darnell Hart", "Kevin","Darnell","Hart","KDH123","Active"));
+            userList.add(new User("Ellen Lee DeGeneres", "Ellen","Lee","DeGeneres","ELD123","Active"));
+            
+            //userList.add(user);
+ 
+      } catch (Exception e) { 
+         e.printStackTrace(); 
+      }   
+      return userList; 
+   }  
+}

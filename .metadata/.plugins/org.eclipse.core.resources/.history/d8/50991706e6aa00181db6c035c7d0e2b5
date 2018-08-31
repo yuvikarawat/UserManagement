@@ -1,0 +1,17 @@
+package com.user.gateway;
+
+import java.util.ArrayList;
+
+import com.user.dao.User;
+
+public class UserManagementRestServiceGatewayImpl {
+
+	
+	public ArrayList<User> callUsermanagementrestService() {
+		
+		User user = new User();
+		
+		ArrayList<User> userList = new ArrayList<>();
+		return user;
+	}
+}

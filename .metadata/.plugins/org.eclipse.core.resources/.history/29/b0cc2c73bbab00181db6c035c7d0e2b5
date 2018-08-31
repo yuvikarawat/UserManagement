@@ -1,0 +1,41 @@
+package com.user.gateway;
+
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Invocation;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
+
+import org.apache.catalina.WebResource;
+import org.glassfish.jersey.client.ClientResponse;
+
+import com.sun.research.ws.wadl.Response;
+
+public class UserManagementRestServiceGatewayImpl {
+
+  public static void main(String[] args) {
+	try {
+
+		
+
+		
+
+		Client client = ClientBuilder.newClient();
+		WebTarget webTarget 
+		  = client.target("http://localhost:8082/spring-jersey");
+		Invocation.Builder invocationBuilder 
+		  = webTarget.request(MediaType.APPLICATION_JSON);
+		Response response 
+		  = invocationBuilder.get(User);
+
+
+		
+
+	  } catch (Exception e) {
+
+		e.printStackTrace();
+
+	  }
+
+	}
+}

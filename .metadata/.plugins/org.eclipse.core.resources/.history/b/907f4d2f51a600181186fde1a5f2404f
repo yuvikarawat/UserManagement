@@ -1,0 +1,94 @@
+package com.tutorialspoint;
+
+import java.io.Serializable;
+
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "user")
+
+public class User implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	private String fullName;
+	private String firstName;
+	private String middleName;
+	private String lastName;
+	private String userName;
+	private String status;
+
+	public User() {
+	}
+
+	public User(String fullName, String firstName, String lastName, String userName, String status) {
+
+		this.fullName = fullName;
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.lastName=lastName;
+		this.userName=userName;
+		this.status=status;
+
+	}
+
+	
+
+	public String getFullName() {
+		return fullName;
+	}
+
+	@XmlElement
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	@XmlElement
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	
+	public String getMiddleName() {
+		return middleName;
+	}
+
+	public void setMiddleName(String middleName) {
+		this.middleName = middleName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	@XmlElement
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	@XmlElement
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	@XmlElement
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+}

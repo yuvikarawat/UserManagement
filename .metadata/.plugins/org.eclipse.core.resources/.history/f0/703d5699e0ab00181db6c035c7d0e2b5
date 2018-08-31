@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <constant name = "struts.devMode" value = "true" />
+   
+   <package name = "helloworld" extends = "struts-default">
+     <action name = "loadUsers" 
+         class = "com.user.action.UserManagementAction" 
+         method = "execute">
+         <result name = "success">/HelloWorld.jsp</result>
+      </action>
+      
+      <result-types>
+         <result-type name = "tiles" 
+         class="org.apache.struts2.views.tiles.TilesResult" />
+      </result-types>
+
+      <action name = "*Menu" method = "{1}" 
+         class = "com.tutorialspoint.struts2.MenuAction">
+         <result name = "tiger" type = "tiles">tiger</result>
+         <result name = "lion" type = "tiles">lion</result>
+      </action>
+      
+   </package>
+</struts>
+

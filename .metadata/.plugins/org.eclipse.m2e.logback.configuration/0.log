@@ -1,0 +1,6 @@
+2018-08-22 15:32:37,682 [Worker-12: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-08-22 17:06:58,309 [Worker-16: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-08-29 11:15:58,395 [Worker-259: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar
+2018-08-29 11:15:58,621 [Worker-259: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ognl/ognl/3.1.15/ognl-3.1.15-sources.jar
+2018-08-30 21:37:30,039 [Worker-441: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/struts/struts2-core/2.5.17/struts2-core-2.5.17-sources.jar
+2018-08-30 21:37:30,528 [Worker-441: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/struts/struts2-core/2.5.17/struts2-core-2.5.17-sources.jar

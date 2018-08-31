@@ -1,0 +1,44 @@
+package com.user.gateway;
+
+import java.util.ArrayList;
+
+import javax.json.JsonArray;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
+
+import com.user.dao.User;
+
+import sun.net.www.http.HttpClient;
+
+public class UserManagementRestServiceGatewayImpl {
+
+	public ArrayList<User> callUsermanagementrestService() {
+
+		//User user = new User();
+
+		ArrayList<User> userList = new ArrayList<User>();
+		try {
+			/*Client client = ClientBuilder.newClient();
+			WebTarget target = client.target("http://localhost:8080/UserManagementRestSvc/rest/UserService/users");
+			JsonArray response = target.request(MediaType.APPLICATION_JSON).get(JsonArray.class);
+			System.out.println(response.toString());  */
+			
+			
+
+			
+			
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} /*catch (JAXBException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}*/
+		
+
+		return userList;
+	}
+}

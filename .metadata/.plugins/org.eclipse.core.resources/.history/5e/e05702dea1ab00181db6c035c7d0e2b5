@@ -1,0 +1,29 @@
+package com.tutorialspoint;
+
+import java.util.ArrayList;
+
+public class UserDao { 
+   public Users getAllUsers(){ 
+      Users users = new Users();
+      try {   	  
+    	  	ArrayList<User> userList=new ArrayList<User>();
+    	  	User user = 
+    	  	
+    	  	
+    	  	userList.add(new User(100,"Jerry Allen Sienfeld", "Jerry","Allen","Sienfeld","JAS123","Active","Admin"));
+    	  	users.setUsers(userList);
+    	  	
+    	  	/*users.getUser().add(new User(101,"Christopher Julius Rock", "Christopher","Julius","Rock","CJR123","Active","Developer"));           
+    	  	users.getUser().add(new User(102,"Kevin Darnell Hart", "Kevin","Darnell","Hart","KDH123","Active","Developer"));
+    	  	users.getUser().add(new User(103,"Ellen Lee DeGeneres", "Ellen","Lee","DeGeneres","ELD123","Active","Project Manager"));
+    	  	*/
+    	  	
+    	  	System.out.println(user);
+    	  	System.out.println(users);
+ 
+      } catch (Exception e) { 
+         e.printStackTrace(); 
+      }   
+      return users; 
+   }  
+}

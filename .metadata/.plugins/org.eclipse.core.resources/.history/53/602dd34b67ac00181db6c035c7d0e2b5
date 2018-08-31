@@ -1,0 +1,42 @@
+package com.user.action;
+
+import java.util.List;
+
+import com.user.dao.User;
+import com.user.dao.Users;
+import com.user.gateway.UserManagementRestServiceGatewayImpl;
+
+public class UserManagementAction {
+	private String firstName;
+
+	List<User> userList;
+
+	public String execute() throws Exception {
+		UserManagementRestServiceGatewayImpl userManagementRestServiceGatewayImpl = new UserManagementRestServiceGatewayImpl();
+		Users users = userManagementRestServiceGatewayImpl.callUsermanagementrestService();
+		this.userList=users.getUsers();
+		userList.stream().sorted((object1, object2) -> object1.getUserName().compareTo(object2.getUserName()));
+		return "success";
+	}
+
+	
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+
+
+	public List<User> getUserList() {
+		return userList;
+	}
+
+	public void setUserList(List<User> userList) {
+		this.userList = userList;
+	}
+
+}

@@ -1,0 +1,37 @@
+package com.user.action;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.user.dao.User;
+import com.user.dao.Users;
+import com.user.gateway.UserManagementRestServiceGatewayImpl;
+
+public class UserManagementAction {
+	private String name;
+
+	List<User> userList;
+
+	public String execute() throws Exception {
+		UserManagementRestServiceGatewayImpl userManagementRestServiceGatewayImpl = new UserManagementRestServiceGatewayImpl();
+		Users users = userManagementRestServiceGatewayImpl.callUsermanagementrestService();
+		return "success";
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<User> getUserList() {
+		return userList;
+	}
+
+	public void setUserList(List<User> userList) {
+		this.userList = userList;
+	}
+
+}
